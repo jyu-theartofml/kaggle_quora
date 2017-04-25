@@ -10,6 +10,7 @@ explanation</a> complete with clear visualization. In short, recurrent network w
 LSTM neural net is a recurrent network with individual unit that contains a <i>memory cell</i> which runs through the entire chain. This
 memory cell works with other elements in the unit, such as forget-gate and input-gate, to decide what information/feature to keep, thus learning the semantic relevance of each word in the case of sentence input. This architecture allows LSTM to capture information few units prior and the
 memory cell avoids the vanishing-gradient problem common to recurrent neural net.</p>
+<p align='center'><img src = 'LSTM3-chain.png', width=60%, height=60%><br> Fig 1. Design of LSTM neural network(source: Colah). For the input of this data set, X_t corresponds to the word at t position of the sentence, and X_t+1 is the next word and so on.</p>
 
 <p> In this code, the model input would be a pair of questions and it outputs a prediction where 1 is duplicat. Each question is embedded using the Glove pretrained word vector, and each embedded vector is fed to 
 a LSTM network. Then the representation output from the LSTM layer is combined to calculate the distance 
