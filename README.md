@@ -12,6 +12,7 @@ memory cell works with other elements in the unit, such as forget-gate and input
 memory cell avoids the vanishing-gradient problem common to recurrent neural net.</p>
 <p align='center'><img src = 'LSTM3-chain.png', width=60%, height=60%><br> Fig 1. Design of LSTM neural network(source: Colah). For the input of this data set, X_t corresponds to the word at t position of the sentence, and X_t+1 is the next word and so on.</p>
 
+## LSTM model for Quora dataset ##
 <p> In this code, the model input would be a pair of questions and it outputs a prediction where 1 is duplicate. Each question is embedded using the Glove pretrained word vector, and each embedded vector is fed to 
 a LSTM network. Then the representation output from the LSTM layer is combined to calculate the distance 
 (the sum of the squared difference between the two representation vectors), and that goes through two dense layers with the final dense layer 
