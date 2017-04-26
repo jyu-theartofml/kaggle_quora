@@ -2,7 +2,7 @@
 
 <p> In this Kaggle competition, the goal is to compile a model to identify if a pair of questioins is asking the same thing or not. Quora provided 400K+ question pairs for 
 the training set, and the final test data set has 2,345,796 question pairs (that's alot of data!). While many Kagglers have used techniques such as Xgboost and feature extraction such as TF-IDF, ratio of matching words, and weighted word2vec, recurrent neural network is used here to explore its potential in solving this problem.
-Log loss is used to evaluate the performance of the model.</p>
+Log loss is used to evaluate the performance of the model. Two codes are shown in this repositor - the first one is the preprocessing step to build the embedding matrix, and the second code is for model training and tuning.</p>
 
 ## Recurrent Neural Net (LSTM) ##
 <p> For background on recurrent neural net and its differnet derivations, Google Brain research scientist Christopher Colah provides excellent <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">
@@ -21,8 +21,10 @@ the model is trained by minimizing log loss. In the tradition Siamese network, t
 representation vectors and contrastive loss is used to train the model.</p>
 
 <p align='center'><img src = 'lstm_quora.png', width=60%, height=60%><br> Fig 2. Schematic of workflow for classifier model, the final output is a 1D vector with values from 0 - 1 corresponding to the probability that they are duplicate questions.</p>
+<p>With the codes presented in this repository, the LB log loss score was 0.36160 with no dropouts applied. Further optimization and tweaking of the model will be evaluated. 
 
 
 
 ### Reference ###
-[1] <i>Semantic Question Matching with Deep Learning, </i>https://engineering.quora.com/Semantic-Question-Matching-with-Deep-Learning
+[1] <i>Semantic Question Matching with Deep Learning</i>, https://engineering.quora.com/Semantic-Question-Matching-with-Deep-Learning
+[2]<i> Using pre-trained word embeddings in a Keras model</i>, https://blog.keras.io/using-pre-trained-word-embeddings-in-a-keras-model.html
