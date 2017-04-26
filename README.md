@@ -5,7 +5,7 @@ the training set, and the final test data set has 2,345,796 question pairs (that
 Log loss is used to evaluate the performance of the model. Two codes are shown in this repository - the first one is the preprocessing step to build the embedding matrix, and the second code is for model training and tuning.</p>
 
 ## Recurrent Neural Net (LSTM) ##
-<p> For background on recurrent neural net and its differnet derivations, Google Brain research scientist Christopher Colah provides excellent <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">
+<p> For background on recurrent neural net and its differnet derivations, Google Brain research scientist Christopher Olah provides excellent <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">
 explanation</a> complete with clear visualization. In short, recurrent network works well with temporal-dependent data where a particular data point is dependent on previous data point(s). Examples of such data set are stock prices,  sentence and semantics, etc. Recurrent network has chain like structure composed of repeating units, and each unit (after time 0) accepts the data point AND the output of the previous unit as the input. 
 LSTM neural net is a recurrent network with individual unit that contains a <i>memory cell</i> which runs through the entire chain. This
 memory cell works with other elements in the unit, such as forget-gate and input-gate, to decide what information/feature to keep, thus learning the semantic relevance of each word in the case of sentence input. This architecture allows LSTM to capture information few units prior and the
