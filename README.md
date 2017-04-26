@@ -26,5 +26,5 @@ representation vectors and contrastive loss is used to train the model.</p>
 
 
 ### Reference ###
-[1] <i>Semantic Question Matching with Deep Learning</i>, https://engineering.quora.com/Semantic-Question-Matching-with-Deep-Learning
-[2]<i> Using pre-trained word embeddings in a Keras model</i>, https://blog.keras.io/using-pre-trained-word-embeddings-in-a-keras-model.html
+<p>[1] <i>Semantic Question Matching with Deep Learning</i>, https://engineering.quora.com/Semantic-Question-Matching-with-Deep-Learning</p>
+<p>[2]<i> Using pre-trained word embeddings in a Keras model</i>, https://blog.keras.io/using-pre-trained-word-embeddings-in-a-keras-model.html</p>
