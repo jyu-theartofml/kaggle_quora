@@ -15,8 +15,7 @@ memory cell avoids the vanishing-gradient problem common to recurrent neural net
 ## LSTM model for Quora dataset ##
 <p> This code is similar to one of the models suggested in Nikhil Dandekar's blog [1] - the model input would be a pair of questions and it outputs a prediction where 1 is duplicate. Each question is embedded using Standford's NLP <a href= 'https://nlp.stanford.edu/projects/glove/'>GloVe pretrained word vector</a>, and each embedded vector is fed to 
 a LSTM network. Then the representation output from the LSTM layer is combined to calculate the distance 
-(the sum of the squared difference between the two representation vectors), and that goes through two dense layers with the final dense layer 
-being the sigmoid function. This model architecture is similar to Siamese network, except there's the final sigmoid function to predict a binary outcome, and 
+(the sum of the squared difference between the two representation vectors), and that goes through two dense layers with sigmoid functions. This model architecture is similar to Siamese network, except there's the final sigmoid function to predict a binary outcome, and 
 the model is trained by minimizing log loss. In the tradition Siamese network, the output of the model is simply the distance between the two 
 representation vectors and contrastive loss is used to train the model.</p>
 
