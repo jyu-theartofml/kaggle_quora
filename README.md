@@ -1,4 +1,4 @@
-# kaggle_quora (active competition)
+# kaggle_quora
 
 <p> In this Kaggle competition, the goal is to compile a model to identify if a pair of questioins is asking the same thing or not. Quora provided 400K+ question pairs for 
 the training set, and the final test data set has 2,345,796 question pairs (that's alot of data!). While many Kagglers have used techniques such as Xgboost and feature extraction such as TF-IDF, ratio of matching words, and weighted word2vec, recurrent neural network is used here to explore its potential in solving this problem.
@@ -21,7 +21,7 @@ the model is trained by minimizing log loss. In the tradition Siamese network, t
 representation vectors and contrastive loss is used to train the model.</p>
 
 <p align='center'><img src = 'lstm_quora.png', width=60%, height=60%><br> Fig 2. Schematic of workflow for classifier model, the final output is a 1D vector with values from 0 - 1 corresponding to the probability that they are duplicate questions.</p>
-<p>With the codes presented in this repository, the LB log loss score was 0.36160 with no dropouts applied. Further optimization and tweaking of the model will be evaluated. 
+<p>With the codes presented in this repository, the LB log loss score was 0.32650 with dropout of 0.30 applied. 
 
 
 
