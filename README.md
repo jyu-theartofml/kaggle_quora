@@ -2,7 +2,7 @@
 
 <p> In this Kaggle competition, the goal is to compile a model to identify if a pair of questioins is asking the same thing or not. Quora provided 400K+ question pairs for 
 the training set, and the final test data set has 2,345,796 question pairs (that's alot of data!). While many Kagglers have used techniques such as Xgboost and feature extraction such as TF-IDF, ratio of matching words, and weighted word2vec, recurrent neural network is used here to explore its potential in solving this problem.
-Log loss is used to evaluate the performance of the model. Two codes are shown in this repository - the first one is the preprocessing step to build the embedding matrix, and the second code is for model training and tuning.</p>
+Log loss is used to evaluate the performance of the model. Two codes are shown in this repository - the first one is the preprocessing step to build the embedding matrix, and the second code is for model training and tuning. The final ranking for this submission was 37% on Kaggle's LB.</p>
 
 ## Recurrent Neural Net (LSTM) ##
 <p> For background on recurrent neural net and its differnet derivations, Google Brain research scientist Christopher Olah provides excellent <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">
